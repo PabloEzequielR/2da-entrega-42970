@@ -1,0 +1,114 @@
+$maximoPantalla:100vh;
+
+*{ 
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    text-decoration-color: none;
+}
+body{
+    background-color: rgba(216, 127, 12, 0.959);
+    display: grid;
+    min-height: $maximoPantalla;
+    grid-template-rows: auto 1fr auto;
+}
+nav{
+    color: rgb(76, 206, 178);
+    background-color:rgb(2, 2, 2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    word-spacing: 20px;
+    height: 50px;
+    width:auto;
+    padding: 30px;
+    padding-bottom: 10px;
+    text-decoration-line: none;
+    text-align: right;
+}
+ul li{
+    display: inline-block;
+}
+ul li a{
+    color: rgb(76, 206, 178);
+}
+#checkbox-menu, label.menu{
+    display: none;
+}
+/*fin navbar*/
+footer{
+    color: rgb(76, 206, 178);
+    background-color:rgb(2, 2, 2);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border: none;
+}
+section{
+    text-align: center;
+    margin: 50px;
+    padding-top: 20px;
+}
+/**banerindex**/
+.titulouno{
+    font-family: 'Oswald', sans-serif;
+    padding-top: 0px;
+    padding-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+.titulodos{
+    font-family: 'Public Sans', sans-serif;
+}
+/**ubicacion**/
+.gmaps{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+/**imaginesprincipales**/
+.baner{
+    display: inline-block;
+    padding-bottom: 50px;
+}
+.logo{
+    text-align: center;
+    padding-bottom: 50px;
+}
+/**flex.productos**/
+.prodpadre{
+    background-color: rgb(139, 139, 146);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.prodhijo{
+    background-color: rgb(255, 255, 255);
+    flex-grow: 1;
+    height: 250px;
+    width: 350px;
+    margin: 1%;
+    border: 3px solid;
+} 
+/**fin flex.productos**/
+@media screen and (max-width:600px){
+    nav ul {
+        display: none;
+        flex-direction: column;
+        /* position: absolute; */
+    }
+    label.menu{
+        display: block;
+        font-size: 40px;
+        cursor: pointer;
+    }
+    #checkbox-menu:checked ~ ul{
+        display: block;
+    }
+}
+#carouselExampleIndicators {
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    }
