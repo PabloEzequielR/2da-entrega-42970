@@ -12,19 +12,6 @@ body{
     min-height: $maximoPantalla;
     grid-template-rows: auto 1fr auto;
 }
-nav{
-    color: rgb(76, 206, 178);
-    background-color:rgb(2, 2, 2);
-    font-family: 'Roboto', sans-serif;
-    font-weight: bolder;
-    word-spacing: 20px;
-    height: 50px;
-    width:auto;
-    padding: 30px;
-    padding-bottom: 10px;
-    text-decoration-line: none;
-    text-align: right;
-}
 ul li{
     display: inline-block;
 }
@@ -112,3 +99,36 @@ section{
     height: 50%;
     margin: 0 auto;
     }
+nav{
+    color: rgb(76, 206, 178);
+    background-color:rgb(2, 2, 2);
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    word-spacing: 20px;
+    height: 50px;
+    width:auto;
+    padding: 30px;
+    padding-bottom: 10px;
+    text-decoration-line: none;
+    text-align: right;
+    .logo{
+        border-radius: none;
+    }
+}
+form {
+    @include flex-centrado;
+    gap: 90px;
+}
+#form {
+    div {
+        background-color: rgba(33, 87, 131, 0.945);
+    }
+}
+.formu {
+    margin-top: 50px;
+}
+.lista-direccion {
+    align-items: center;
+    
+}
+/**productos**/
