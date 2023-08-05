@@ -4,16 +4,18 @@
   text-decoration: none;
   text-decoration-color: none;
 }
-
 body {
-  background-color: rgba(216, 127, 12, 0.959);
+  background-color: rgba(207, 156, 37, 0.959);
   display: grid;
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
-
+.header .navbar {
+  background-color: rgb(210, 69, 9) !important;
+  
+}
 nav {
-  color: rgb(76, 206, 178);
+  color: rgb(76, 206, 178) !important;
   background-color: rgb(2, 2, 2);
   font-family: "Roboto", sans-serif;
   font-weight: bolder;
@@ -25,91 +27,102 @@ nav {
   text-decoration-line: none;
   text-align: right;
 }
-
 ul li {
   display: inline-block;
 }
-
 ul li a {
   color: rgb(76, 206, 178);
 }
-
 #checkbox-menu, label.menu {
   display: none;
 }
-
 /*fin navbar*/
 footer {
-  color: rgb(76, 206, 178);
-  background-color: rgb(2, 2, 2);
+  color: rgb(0, 0, 0);
+  background-color: rgb(210, 69, 9);
   text-align: center;
   font-family: "Roboto", sans-serif;
   padding-top: 20px;
   padding-bottom: 20px;
   border: none;
 }
-
 section {
   text-align: center;
   margin: 50px;
   padding-top: 20px;
 }
-
+.portada{
+  background-image: url(../multimedia/portada.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+  /* min-width: 260px; */
+  min-height: 200px;
+  /* contain: center; */ */
+}
 /**banerindex**/
 .titulouno {
   font-family: "Oswald", sans-serif;
   padding-top: 0px;
   padding-bottom: 15px;
   color: rgb(0, 0, 0);
+  text-align: center;
 }
-
 .titulodos {
   font-family: "Public Sans", sans-serif;
+  text-align: center;
+  color: black;
 }
-
 /**ubicacion**/
 .gmaps {
   text-align: center;
   margin-top: 40px;
   margin-bottom: 100px;
 }
-
+.formu{
+  max-width: 90%;
+  display: grid;
+  grid-column: auto;
+  justify-content: center;
+}
 /**imaginesprincipales**/
 .baner {
   display: inline-block;
   padding-bottom: 50px;
 }
-
 .logo {
   text-align: center;
   padding-bottom: 50px;
 }
-
 /**flex.productos**/
 .prodpadre {
-  background-color: rgb(139, 139, 146);
+  background-color: chocolate;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
 }
-
 .prodhijo {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(37, 36, 34)
   flex-grow: 1;
   height: 250px;
   width: 350px;
   margin: 1%;
-  border: 3px solid;
+  border: 1px solid;
 }
-
+.carrusel{
+  width: 20px, auto;
+  margin-top: 10px;
+  margin-bottom: 100px;
+}
+.fullpantalla{
+  min-height: calc(100vh -50px -50px);
+}
 /**fin flex.productos**/
 @media screen and (max-width: 600px) {
   nav ul {
     display: none;
     flex-direction: column;
-    /* position: absolute; */
   }
   label.menu {
     display: block;

@@ -69,6 +69,10 @@ section{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
+    .p{
+        color: black;
+        text-decoration: solid;
+    }
 }
 .prodhijo{
     background-color: rgb(255, 255, 255);
