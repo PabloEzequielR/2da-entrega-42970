@@ -10,9 +10,9 @@ body {
   min-height: 100vh;
   grid-template-rows: auto 1fr auto;
 }
+/* inicio navbar */
 .header .navbar {
   background-color: rgb(210, 69, 9) !important;
-  
 }
 nav {
   color: rgb(76, 206, 178) !important;
@@ -36,6 +36,14 @@ ul li a {
 #checkbox-menu, label.menu {
   display: none;
 }
+header nav ul li a:hover{
+  background-color: rgb(233, 114, 30);
+  -webkit-transform:scale(1.10);
+}
+.hov:hover{
+  background-color: rgb(233, 114, 30);
+  -webkit-transform:scale(1.05);
+}
 /*fin navbar*/
 footer {
   color: rgb(0, 0, 0);
@@ -46,6 +54,9 @@ footer {
   padding-bottom: 20px;
   border: none;
 }
+footer div a :hover{
+  -webkit-transform:scale(1.25);
+}
 section {
   text-align: center;
   margin: 50px;
@@ -55,9 +66,7 @@ section {
   background-image: url(../multimedia/portada.jpg);
   background-repeat: no-repeat;
   background-size:cover;
-  /* min-width: 260px; */
   min-height: 200px;
-  /* contain: center; */ */
 }
 /**banerindex**/
 .titulouno {
@@ -93,6 +102,11 @@ section {
   text-align: center;
   padding-bottom: 50px;
 }
+.mprincipal div a :hover{
+  -webkit-transform:scale(1.05);
+  border: 3px solid;
+  border-color: rgb(210, 69, 9);
+}
 /**flex.productos**/
 .prodpadre {
   background-color: chocolate;
@@ -119,7 +133,13 @@ section {
   min-height: calc(100vh -50px -50px);
 }
 /**fin flex.productos**/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 991px) {
+  .header nav{
+    width: auto;
+    height: auto;
+    float: none;
+    display: block;
+  }
   nav ul {
     display: none;
     flex-direction: column;
@@ -128,6 +148,7 @@ section {
     display: block;
     font-size: 40px;
     cursor: pointer;
+    font-display: solid;
   }
   #checkbox-menu:checked ~ ul {
     display: block;
